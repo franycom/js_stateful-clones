@@ -36,8 +36,9 @@ function transformStateWithClones(state, actions) {
         newState = {};
         break;
     }
-
+    // Push the cloned state object to the result array
     result.push({ ...newState });
+
   }
 
   return result;
